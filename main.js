@@ -42,3 +42,12 @@ if (stateAbbr.length === 2 && stateAbbr.isUpperCase) {
 else {
 	alert ("false\nPlease use format XX")
 }
+
+var married = prompt ("Are you married?" + "\n" + "Please answer 'yes' or 'no")
+
+if (married == "yes" || "Yes" || "YES") {
+	alert ("true")
+}
+else {
+	alert ("false")
+}
