@@ -17,3 +17,15 @@ if (birthDate.charAt(2) === "/" && birthDate.charAt(5) === "/") {
 else {
 	alert ("false\nPlease use format xx/xx/xx")
 }
+var postalCode = prompt ("Please enter your postal code" +"\n" + "ex. xxxxx or xxxxx-xxxx")
+console.log(postalCode)
+
+if (postalCode.length === 5) {
+	alert ("true")
+}	
+else if (postalCode.length === 10 && postalCode.charAt(5) === "-") {
+	alert ("true")
+}
+else {
+	alert ("false\nPlease use format xxxxx or xxxxx-xxxx")
+}
