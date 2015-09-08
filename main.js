@@ -6,6 +6,7 @@ if (phoneNumber.charAt(3) === "-" && phoneNumber.charAt(7) === "-") {
 }
 else {
 	alert ("false\nPlease use format xxx-xxx-xxxx")
+	prompt ( "Please enter your phone number" +"\n" + "ex. xxx-xxx-xxxx" +"\n" + "This will not be used for spam")
 }
 
 var birthDate = prompt ("Please enter your birth date" +"\n" + "ex. xx/xx/xx")
@@ -16,6 +17,7 @@ if (birthDate.charAt(2) === "/" && birthDate.charAt(5) === "/") {
 }
 else {
 	alert ("false\nPlease use format xx/xx/xx")
+	prompt ("Please enter your birth date" +"\n" + "ex. xx/xx/xx")
 }
 var postalCode = prompt ("Please enter your postal code" +"\n" + "ex. xxxxx or xxxxx-xxxx")
 console.log(postalCode)
@@ -28,4 +30,15 @@ else if (postalCode.length === 10 && postalCode.charAt(5) === "-") {
 }
 else {
 	alert ("false\nPlease use format xxxxx or xxxxx-xxxx")
+	prompt ("Please enter your postal code" +"\n" + "ex. xxxxx or xxxxx-xxxx")
+}
+
+var stateAbbr = prompt ( "Please enter in your abbreviated state code" + "\n" + "ex. CO, AZ, XX, etc.")
+
+if (stateAbbr.length === 2 && stateAbbr.isUpperCase) {
+	alert ("true")
+}
+
+else {
+	alert ("false\nPlease use format XX")
 }
